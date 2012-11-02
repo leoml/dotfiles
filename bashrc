@@ -2,7 +2,7 @@ export VISUAL=vim
 export CC=gcc-4.2
 
 # PATH 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin/:/opt/local/libexec/git-core/:/sw/bin/:/opt/local/sbin/:/Users/leonardoml/bin
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin/:/opt/local/libexec/git-core/:/opt/local/sbin/:/Users/leonardoml/bin
 
 #
 # Terminal  
@@ -26,7 +26,6 @@ alias ls="ls -G"
 alias pt_correct='aspell -c  -d pt_BR'
 alias en_correct='aspell -c  -d en_US'
 alias hwireless='wpa_supplicant  -w  -iath0 -c /etc/wpa_supplicant/homenet.cfg -Dmadwifi -dd' 
-alias grep='grep --color'
 alias mate='/Applications/TextMate.app/Contents/Resources/mate'
 alias config_term="source .bashrc"
 alias macflushcache="dscacheutil -flushcache"
