@@ -1,0 +1,16 @@
+# barra azul e amarelo, com hora, data e janelas
+msgwait 3
+#sorendition 35 74 # 05 33 #45
+sorendition  00 47   #45
+hardstatus alwayslastline " %c | %D-%d/%m/%y | %l | %w"
+
+shelltitle "$ |Bash"
+
+startup_message off                      # msg mala
+nethack on                               # msgs estilo nethack
+caption splitonly "%2n %t"               # barra de janelas
+Reply
+		
+Forward
+		
+	
