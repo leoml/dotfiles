@@ -1,4 +1,4 @@
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
-brew install pstree mvim lynx nmap mtr netcat tcptrack dnstracer tcptraceroute tcptrace fping wget curllynx mysql git git-utils irssi unrar aspell --lang=en,pt_BR
+brew install pstree macvim lynx nmap mtr netcat tcptrack dnstracer tcptraceroute tcptrace fping wget curl lynx mysql git git-utils irssi unrar aspell --lang=en,pt_BR
 
