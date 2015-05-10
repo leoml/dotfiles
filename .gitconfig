@@ -12,7 +12,7 @@
 
 [alias]
  logg = log --pretty='%Cblue%H%Creset | %Cgreen%an%Creset | %C(white)%cr%Creset | %C(cyan)%s%Creset'
- loggg =  --graph --color --pretty='format:%C(yellow)%h%C(cyan)%d %Creset%s %C(blue)%an, %ar' --date-order
+ loggg = log  --graph --color --pretty='format:%C(yellow)%h%C(cyan)%d %Creset%s %C(blue)%an, %ar' --date-order
  st = status --short
  co = checkout
  cm = commit -m
