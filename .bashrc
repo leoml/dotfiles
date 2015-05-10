@@ -9,7 +9,7 @@ export CC=gcc-4.2
 . ~/Dropbox/dot_file/.sysadmin-bashrc
 
 # PATH 
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin/:/opt/local/libexec/git-core/:/opt/local/sbin/:/Users/lmart37/bin
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin/:/opt/local/libexec/git-core/:/opt/local/sbin/:/Users/$USER/bin
 
 #
 # Terminal  
