@@ -20,6 +20,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.bashrc
 unsetopt SHARE_HISTORY
 
+PROMPT="%{$fg[yellow]%}.:%n@%{$fg[yellow]%}%m:.%{$fg_no_bold[cyan]%}%1 %~$%{$reset_color%}"
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
