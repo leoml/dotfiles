@@ -2,11 +2,8 @@ export VISUAL=vim
 export EDITOR=vim
 export CC=gcc-4.2
 
-# Import my INC confs
-. ~/Dropbox/dot_file/.current-inc-bashrc
-
 # Import my SysAdmin Tools 
-. ~/Dropbox/dot_file/.sysadmin-bashrc
+. ~/.ltools
 
 # PATH 
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/bin:/sbin:/usr/bin:/usr/sbin:/opt/local/bin/:/opt/local/libexec/git-core/:/opt/local/sbin/:/Users/$USER/bin

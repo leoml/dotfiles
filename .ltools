@@ -1,0 +1,55 @@
+
+#http://cb.vu/unixtoolbox.xhtml 
+
+function networking_tools {
+	echo "- tcpdump -i eth0  -T snmp \"(src port 161 or 162)\" "
+	echo "- tcpdump -i eth0 'udp port 53'"
+	echo "- tcpdump \"tcp[tcpflags] & (tcp-syn|tcp-ack) != 0\""
+	echo "- tcpdump -ni eth0 'dst 192.168.1.5 and tcp and port http' "
+	echo "- tcpdump port 80   and host  tcpdump -ni eth0 'dst 192.168.1.5 and tcp and port http' "
+	echo "- Netcat : nc -z 10.10.10.60 22 "
+	echo "- Netcat : Server: cat largefile | nc -l 5678  >> Client: nc 192.168.1.1 5678 > largefile" 
+}
+
+function so_tools {
+	echo "- List processes accessing the / : fuser -m /"
+	echo "- List processes accessing the /var : lsof /var"
+	echo "- Activate and deactivate : swapon swapoff" 
+	echo "- Trace system calls: strace -e ls /home "
+	echo "- Trace system calls: strace -e trace=open,read ls /home "
+	echo "- Directory sizes : du -sh * "
+	echo "- Listen ports: netstat -anp --udp --tcp | grep LISTEN "
+	echo "- Listen ports: netstat -tupl  "
+	echo "- List of all open files: lsof -u http "
+	echo "- List of all open files: lsof -i :22 "
+	echo "- List processo on port: fuser 22/tcp" 
+	echo "- Top large files: find . -type f -size +50000k -exec ls -lh {} \; | awk '{print \$9 \":\" \$5 }'"
+}
+
+function http_tools {
+	echo "- curl -X POST -u admin:pass  -H "Content-Type: application/json" -H "Cache-Control: no-cache"  -d '{"key": "value" }' http://myapp.com/api"
+	echo "- curl Proxy: curl -x http://proxyserver:proxyport --proxy-user user:password -L http://example.com"
+	echo "- curl SSL: curl -k http://example.com"
+	echo "- curl Agent : curl -A "USER AGENT" http://example.com"
+	echo "- curl Post: curl -X POST -u  admin:admin http://example.com/myconfigs/status -Hcontent-type:application/xml"
+	echo "- curl Cookie Save : curl -b mycookies.txt http://example.com"
+	echo "- curl Cookie Send : curl -b 'name=value' http://example.com"
+	echo "- curl Header : curl -H \"Accept: application/xml\" -H \"Content-Type: application/xml\" http://example.com"
+	echo "- curl Time: curl -z 23-FEB-15 http://example.com/myfile.gz"
+}
+
+function sysadmin_debug {
+	echo "---------------------- SYSADMIN DEBUG TOOLS -----------------------------------"
+	echo "### HTTP"
+	http_tools
+	echo "### SO"
+	so_tools
+	echo "### Networking"
+	networking_tools
+	echo "-------------------------------------------------------------------------------"
+}
+
+alias ltools=sysadmin_debug
+alias ltools-so=so_tools
+alias ltools-http=http_tools
+alias ltools-networking=networking_tools
