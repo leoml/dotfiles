@@ -9,6 +9,10 @@ function networking_tools {
 	echo "- tcpdump port 80   and host  tcpdump -ni eth0 'dst 192.168.1.5 and tcp and port http' "
 	echo "- Netcat : nc -z 10.10.10.60 22 "
 	echo "- Netcat : Server: cat largefile | nc -l 5678  >> Client: nc 192.168.1.1 5678 > largefile" 
+	echo "- Listen ports: netstat -anp --udp --tcp | grep LISTEN "
+	echo "- Listen ports: netstat -tupl  "
+	echo "- Metrics about TCP: sar -n TCP,ETCP 1"
+
 }
 
 function so_tools {
@@ -18,12 +22,12 @@ function so_tools {
 	echo "- Trace system calls: strace -e ls /home "
 	echo "- Trace system calls: strace -e trace=open,read ls /home "
 	echo "- Directory sizes : du -sh * "
-	echo "- Listen ports: netstat -anp --udp --tcp | grep LISTEN "
-	echo "- Listen ports: netstat -tupl  "
 	echo "- List of all open files: lsof -u http "
 	echo "- List of all open files: lsof -i :22 "
 	echo "- List processo on port: fuser 22/tcp" 
 	echo "- Top large files: find . -type f -size +50000k -exec ls -lh {} \; | awk '{print \$9 \":\" \$5 }'"
+	echo "- Information about devices: iostat -xz /"
+
 }
 
 function http_tools {
