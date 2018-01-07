@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INSTALL_FILES='.vimrc .vim .gitconfig .bashrc .git .screenrc .ltools'
+INSTALL_FILES='.vimrc .vim .gitconfig .bashrc .git .screenrc .ltools .tmux.conf'
 
 function backup_existing_file {
     local filename=$1
