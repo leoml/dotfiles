@@ -37,7 +37,6 @@ alias .....="cd ../../../.."
 alias __="cd -"
 alias gp="git pull"
 alias gsh="git push"
-alias mtr="sudo ./Users/$USER/homebrew/sbin/mtr"
 
 # Shortcuts
 alias d="cd ~/Dropbox"
@@ -49,7 +48,4 @@ alias flushdns="dscacheutil -flushcache"
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=3200
 export HISTFILESIZE=$HISTSIZE
-# Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-#export HISTIGNORE="*:cd:cd -:pwd;exit:date:* --help"
 
